@@ -4,10 +4,11 @@ import {Component} from 'react';
 class Welcome extends Component{
     //this.props 
     render(){
+        const {name,heroName} = this.props;
         return(
             <div>
-                <h1>Welcome {this.props.name }</h1>
-                <h2>Hero {this.props.heroName }</h2>
+                <h1>Welcome {name }</h1>
+                <h2>Hero {heroName }</h2>
             </div>
         );
     }

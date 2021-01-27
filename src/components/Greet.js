@@ -12,11 +12,13 @@ function Greet(){
 */
 
 const Greet = (props) => {
-    console.log('Props ==>',props);
+    const {name,heroName} = props;
+
+    //console.log('Props ==>',props);
     return(
         <div>
-            <h1>Hello {props.name}  </h1>
-            <h2>Hero {props.heroName}!</h2>
+            <h1>Hello {name}  </h1>
+            <h2>Hero {heroName}!</h2>
             {props.children}
         </div>
     );
