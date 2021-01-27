@@ -8,6 +8,7 @@ import Message from './components/Message'
 import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
         </Greet>
         <Counter></Counter>
         <FunctionClick></FunctionClick>
-        */}
         <ClassClick></ClassClick>
+        */}
+        <ParentComponent></ParentComponent>
     </div>
   );
 }
