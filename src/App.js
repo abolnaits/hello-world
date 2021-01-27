@@ -5,11 +5,13 @@ import './components/Greet'
 import Greet from './components/Greet';
 import Welcome from './components/Welcome'
 import Message from './components/Message'
+import Counter from './components/Counter'
 
 
 function App() {
   return (
     <div className="App">
+        {/*
         <Welcome name="Peter" heroName="Spiderman"></Welcome>
         <Greet name="Bruce" heroName="Batman">
           <p>Children</p>
@@ -19,6 +21,8 @@ function App() {
         </Greet>
         <Greet name="Diana" heroName="Wonder Woman"></Greet>
         <Message></Message>
+        */}
+        <Counter></Counter>
     </div>
   );
 }
