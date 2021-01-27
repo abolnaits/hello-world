@@ -22,6 +22,7 @@ function App() {
         <Greet name="Diana" heroName="Wonder Woman"></Greet>
         <Message></Message>
         */}
+        
         <Counter></Counter>
     </div>
   );
