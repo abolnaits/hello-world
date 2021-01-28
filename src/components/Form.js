@@ -25,6 +25,13 @@ class Form extends Component{
             name : event.target.value
         })
     }
+
+    formHandler = (event) =>{
+        
+        //Retrive the data
+        console.log('Enviar', this.state);
+        event.preventDefault();
+    }
     render(){
         return(
             <div>
@@ -32,7 +39,7 @@ class Form extends Component{
                 <h2>User name: {this.state.name}</h2>
                 <h2>Languague: {this.state.lang}</h2>
                 
-                <form>
+                <form onSubmit={this.formHandler}>
                     <label>Name:</label>
                     <input type="text" value={this.state.name} onChange={this.changeName}></input>
                     <label>Language:</label>
@@ -42,6 +49,8 @@ class Form extends Component{
                         <option value="java">java</option>
                         
                     </select>
+                    <br></br>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         )
