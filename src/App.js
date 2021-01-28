@@ -10,7 +10,7 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import ParentComponent from './components/ParentComponent';
 import NameList from './components/NameList'
-
+import Styled from './components/Styled'
 
 function App() {
   return (
@@ -34,10 +34,11 @@ function App() {
         <FunctionClick></FunctionClick>
         <ClassClick></ClassClick>
         <ParentComponent></ParentComponent>
+        <NameList></NameList>
         */
         }
+        <Styled primary={true}></Styled>
         
-        <NameList></NameList>
     </div>
   );
 }
