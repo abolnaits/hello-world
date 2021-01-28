@@ -27,12 +27,6 @@ class ParentComponent extends Component{
 
         return(
             <div>
-                {/*
-                <h1>{this.state.names[0]}</h1>
-                <h1>{this.state.names[1]}</h1>
-                <h1>{this.state.names[2]}</h1>
-                */}
-
                 {
                     this.state.names.map((name)=>{
                         return <h1>{name}</h1>
