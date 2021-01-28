@@ -9,7 +9,8 @@ class ParentComponent extends Component{
         super()
         this.state ={
             parentName: 'Parent C',
-            isLoggedIn : false    
+            isLoggedIn : false,
+            names : ['Bruce','Clrak','Diana']    
         }
         //Binding
         this.greet = this.greetParent.bind(this)
@@ -25,10 +26,29 @@ class ParentComponent extends Component{
     render(){
 
         return(
+            <div>
+                {/*
+                <h1>{this.state.names[0]}</h1>
+                <h1>{this.state.names[1]}</h1>
+                <h1>{this.state.names[2]}</h1>
+                */}
+
+                {
+                    this.state.names.map((name)=>{
+                        return <h1>{name}</h1>
+                    })
+                }
+            </div>
+        )
+        /*
+        return(
+            
             this.state.isLoggedIn ? 
             <div>Welcome User</div> : 
             <div>Welcome Guest</div>
-        )
+            
+           
+        )*/
         /*
         let message ;
         if(this.state.isLoggedIn){
