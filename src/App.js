@@ -12,7 +12,8 @@ import ParentComponent from './components/ParentComponent';
 import NameList from './components/NameList'
 import Styled from './components/Styled'
 import Form from './components/Form'
-
+import LifecycleA from './components/LifecycleA'
+import LifecycleB from './components/LifecycleB'
 
 function App() {
   return (
@@ -38,9 +39,10 @@ function App() {
         <ParentComponent></ParentComponent>
         <NameList></NameList>
         <Styled primary={true}></Styled>
+        <Form></Form>
         */
         }
-        <Form></Form>
+        <LifecycleA></LifecycleA>
         
     </div>
   );
