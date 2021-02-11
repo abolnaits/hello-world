@@ -13,7 +13,8 @@ import NameList from './components/NameList'
 import Styled from './components/Styled'
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA'
-import LifecycleB from './components/LifecycleB'
+import Fragment from './components/Fragment'
+import TableFC from './components/TableFC'
 
 function App() {
   return (
@@ -40,9 +41,11 @@ function App() {
         <NameList></NameList>
         <Styled primary={true}></Styled>
         <Form></Form>
+        <LifecycleA></LifecycleA>
+        <Fragment></Fragment>
         */
         }
-        <LifecycleA></LifecycleA>
+        <TableFC></TableFC>
         
     </div>
   );
